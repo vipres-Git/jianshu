@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2020-03-29 17:29:25
- * @LastEditTime: 2020-03-29 22:12:28
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2020-04-03 00:05:25
+ * @LastEditors: Alan
  * @Description: In User Settings Edit
  * @FilePath: \jianshu\src\common\header\style.js
  */
@@ -125,5 +125,41 @@ export const NavSearchWrap = styled.div `
         &.focused {
             background: #ccc;
         }
+    }
+`
+
+export const SearchInfo = styled.div`
+    position: absolute;
+    width: 260px;
+    left: 0;
+    top: 56px;
+    padding: 10px;
+    box-shadow: 0 0 1px 1px #eee;
+`
+
+export const InfoChange = styled.div`
+    position: relative;
+    padding: 0 0 10px 0;
+    font-size: 14px;
+    .hot-txt {
+        color: red;
+    }
+    .change {
+        float: right;
+        color: green;
+    }
+`
+
+export const InfoItem = styled.span`
+    float: left;
+    padding: 4px 10px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    color: #888;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    &.hidden {
+        display: none;
     }
 `
